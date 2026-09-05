@@ -1,0 +1,908 @@
+@font-face {
+    font-family: laleh;
+    src: url(./font/Lalezar-Font/OTF/Lalezar-Regular.otf);
+    src: url(./font/Lalezar-Font/TTF/Lalezar-Regular.ttf);
+}
+@font-face {
+    font-family: vazir;
+    src: url(./font/vazir-font-v16.1.0/Vazir.eot);
+    src: url(./font/vazir-font-v16.1.0/Vazir.ttf);
+    src: url(./font/vazir-font-v16.1.0/Vazir.woff);
+    src: url(./font/vazir-font-v16.1.0/Vazir.woff2);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*شروع منو نوبار*/
+
+.icon{
+    display: flex;
+    justify-conten: center;
+    flex-direction: row;
+    gap: 2rem;
+    margin-right: 9rem;
+    margin-top: 2rem;
+    color: rgba(12, 11, 11, 0.929);
+    text-decoration: none;
+    font-size: 20px;
+    z-index: 999;
+
+}
+
+nav{
+    position: relative;
+    z-index: 999;
+}
+
+.matrial{
+       display: flex;
+       text-decoration: none;
+       gap: 2rem;
+       list-style: none;
+       color: rgba(12, 11, 11, 0.929);
+}
+
+.rev{
+    color: rgba(12, 11, 11, 0.929);
+    text-decoration: none;
+    font-family: laleh;
+    font-size: 20px;
+    position: relative;
+}
+
+.snapp {
+    position: relative;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 250px;
+    background: white;
+    padding: 15px;
+    z-index: 999999;
+}
+
+.snapp:hover .menu {
+    display: block;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 8px;
+    font-family: vazir;
+}
+
+.about-snapp {
+    position: relative;
+}
+
+.about-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    z-index: 99999;
+}
+
+.about-snapp:hover .about-menu {
+    display: block;
+}
+
+.iran{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+    margin-right: 10rem;
+}  
+
+.iran h1{
+    font-family: laleh;
+    font-size: 2rem;
+    line-height: 1.6;
+}
+
+.iran img{
+    width: 25rem;
+    height: 20rem;
+    margin-left: 10rem;
+}
+
+.iran p{
+    font-family: vazir;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+}
+
+.text-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.russia{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+#iraq{
+    font-family: laleh;
+     background-color: rgba(29, 140, 2, 0.95);
+     color: white;
+     border-radius: 5px;
+     font-size: 2rem;
+     padding: 5px;
+     text-decoration: none;
+}
+
+#china{
+    font-family: laleh;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid rgba(29, 140, 2, 0.95);
+    text-decoration: none;
+    font-size: 2rem;
+    color: rgb(33, 140, 6);
+    margin-right: 3rem;
+}
+
+#hdr{
+    font-family: laleh;
+    margin-right: 9rem;
+    margin-top: 1rem;
+}
+
+#uef{
+    margin-right: 5rem;
+    font-size: 10rem;
+
+}
+
+.pakstan{
+    display: inline-block;
+    gap: 1rem;
+    flex-direction: column;
+    margin-right: 6rem;
+    margin-bottom: 2rem;
+}
+
+.lolo{
+    width: 5rem;
+    height: 4rem;
+    margin-right: 2rem;
+}
+
+.oman{
+    display: flex;
+    gap: 0.02rem;
+    flex-direction: row;
+}
+
+.utut{
+    margin-right: 2.4rem;
+    font-family: vazir;
+}
+
+.mah{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(240, 251, 255, 0.904);
+    margin-right: 5rem;
+    height: 5rem;
+    width: 25rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+.mah img{
+    height: 4rem;
+    width: 5rem;
+    padding-right: 10rem;
+    padding-left: 1px;
+}
+
+.radin{
+    display: flex;
+}
+
+.rere{
+    display: flex;
+    flex-direction: column;
+    padding-right: 0.5rem;
+}
+
+.rere p{
+    font-family: vazir;
+    margin-top: 0.5rem;
+}
+
+.rere h3{
+        font-family: laleh;
+        padding-top: 5px;
+}
+
+.fdfd{
+        display: flex;
+    flex-direction: row;
+    background-color: rgba(240, 251, 255, 0.904);
+    margin-right: 5rem;
+    height: 5rem;
+    width: 25rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+.fdfd img{
+     height: 4rem;
+    width: 5rem;
+    padding-right: 13rem;
+}
+
+.ghgh{
+     display: flex;
+    flex-direction: row;
+    background-color: rgba(240, 251, 255, 0.904);
+    margin-right: 5rem;
+    height: 5rem;
+    width: 25rem;
+    border-radius: 0.05rem;
+    margin-top: 1rem;
+}
+
+.ghgh img{
+    height: 4rem;
+    width: 5rem;
+    padding-right: 11rem;
+}
+
+.jkjk{
+     display: flex;
+    flex-direction: row;
+    background-color: rgba(240, 251, 255, 0.904);
+    margin-right: 5rem;
+    height: 5rem;
+    width: 25rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+.jkjk img{
+    height: 4rem;
+    width: 5rem;
+    padding-right: 10rem;
+}
+
+.bnbn{
+     display: flex;
+    flex-direction: row;
+    background-color: rgba(240, 251, 255, 0.904);
+    margin-right: 5rem;
+    height: 5rem;
+    width: 25rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+.bnbn img{
+    height: 4rem;
+    width: 5rem;
+    padding-right: 11rem;
+}
+
+.mrmr{
+     display: flex;
+    flex-direction: row;
+    background-color: rgba(240, 251, 255, 0.904);
+    margin-right: 5rem;
+    height: 5rem;
+    width: 25rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+.mrmr img{
+    height: 4rem;
+    width: 5rem;
+    padding-right: 12rem;
+}
+
+.gol{
+    display: flex;
+
+}
+
+.pol{
+    display: flex;
+}
+
+.spania{
+    display: flex;
+}
+
+#alman{
+    margin-top: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.fran{
+    font-family: laleh;
+    border-radius: 1rem;
+    padding-top: 2rem;
+}
+
+#jack{
+    font-family: vazir;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.mohammad{
+    background-color: rgb(238,239,255);
+    height: 102rem;
+     border-radius: 1rem;
+     margin-bottom: 10rem;
+}
+
+#zahi{
+    font-family: laleh;
+    background: rgb(51,177,101);
+    text-decoration: none;
+    font-size: 2rem;
+    color: rgb(255,255,255);
+    border-radius: 0.5rem;
+    padding: 3px;
+    margin-top: 1%;
+}
+
+#uiux{
+    margin: 2rem;
+    height: 30rem;
+    width: 90rem;
+    border-radius: 1rem;
+}
+
+.uyty{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+.dsds{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.hdr{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.tiri{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    width: 40rem;
+    height: 15rem;
+    margin-right: 4rem;
+    border-radius: 1rem;
+}
+
+.tiri img{
+    height: 5rem;
+    width: 10rem;
+    padding-right: 14rem;
+    margin-top: 2rem;
+
+}
+
+.tiri h3{
+    font-family: laleh;
+    padding-right: 3rem;
+
+}
+
+.tiri p{
+    margin-top: 1rem;
+    font-family: vazir;
+    padding-right: 2rem;
+}
+
+.riri{
+    background-color: white;
+    width: 45%;
+    margin-right: 2rem;
+    border-radius: 1rem;
+    height: 20rem;
+}
+
+.open{
+    margin-right: 65rem;
+    margin-bottom: 300rem;
+}
+
+
+#ret{
+    font-family: laleh;
+    margin-right: 5rem;
+    font-size: 2rem;
+}
+
+.box img{
+    display: block;
+    height: 7rem;
+    width: 25rem;
+    margin-right: 3rem;
+    position: relative;
+    border-radius: 1rem;
+}
+
+.border{
+    display: flex;
+    background-color: white;
+    margin-bottom: 3rem;
+}
+
+.border a{
+    text-decoration: none;
+    color: black;
+    font-family: vazir;
+       background-color: rgb(253, 255, 255);
+       padding-top: 0.5rem;
+       border: 2px solid greenyellow;
+       margin-left: 4rem;
+}
+
+.border p{
+    font-family: vazir;
+    background-color: rgb(250, 252, 252);
+    width: 17.1rem;
+    padding-top: 1rem;
+}
+
+.border{
+    position:absolute;
+    font-size: 1rem;
+    margin-top: -3rem;
+    height: 3rem;
+    border-radius: 1rem;
+}
+
+.border img{
+    height: 3rem;
+    width: 3rem;
+    background-color: rgb(253, 255, 255);
+    height: 2rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.one{
+    display: flex;
+    margin: 1rem 4rem;
+}
+
+.two{
+    display: flex;
+     margin: 1rem 4rem;
+}
+
+.thire{
+     display: flex;
+     margin: 1rem 4rem;
+}
+
+.baner{
+    margin-right: 5rem;
+    font-family: laleh;
+}
+
+.imang{
+    width: 27rem;
+    border-radius: 4px;
+    margin: 1rem 2rem 1rem 1rem;
+    display: flex;
+}
+
+#gta{
+    height: 12rem;
+    width: 28rem;
+}
+
+#rti{
+    height: 12rem;
+}
+
+.unvan{
+    margin-right: 2rem;
+    font-family: laleh;
+    display: flex;
+
+}
+
+.rtl{
+    display: flex;
+}
+
+.kloi{
+    display: flex;
+    gap: 9rem;
+}
+
+
+#trak{
+    margin-right: 3rem;
+}
+
+.mahrad{
+    font-family: vazir;
+    color: rgb(65,79,111);
+    margin-right: 8rem;
+    margin-top: 0.5rem;
+}
+
+.trvd{
+    display: flex;
+}
+
+.vpn{
+    margin-right: 4rem;
+    font-family: vazir;
+      color: rgb(65,79,111);
+}
+
+.seven{
+       font-family: vazir;
+    color: rgb(65,79,111);
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+}
+
+
+.twenty{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgb(37,55,78);
+    font-family: vazir;
+}
+
+.firsty{
+    display: flex;
+    justify-content: center;
+}
+
+.firsty img{
+    height: 2rem;
+    width: 2rem;
+    gap: 2rem;
+}
+img{
+    max-width: 100%;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/*ریسپانسیو تبلت*/
+@media (max-width: 1200px){
+
+    .icon{
+        margin-right: 3rem;
+    }
+
+    .matrial{
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .iran{
+        margin-right: 3rem;
+    }
+
+    .iran img{
+        width: 18rem;
+        height: auto;
+        margin-left: 3rem;
+    }
+
+    #hdr{
+        margin-right: 3rem;
+    }
+
+    .pakstan{
+        margin-right: 3rem;
+    }
+
+    .gol,
+    .pol,
+    .spania{
+        flex-wrap: wrap;
+    }
+
+    .mah,
+    .fdfd,
+    .ghgh,
+    .jkjk,
+    .bnbn,
+    .mrmr{
+        width: 20rem;
+        margin-right: 2rem;
+    }
+
+    .mohammad{
+        height: auto;
+    }
+
+    #uiux{
+        width: 100%;
+        height: auto;
+    }
+
+    .tiri{
+        width: 30rem;
+        margin-right: 2rem;
+    }
+
+    .one,
+    .two,
+    .thire{
+        flex-wrap: wrap;
+        margin: 1rem 2rem;
+    }
+
+    .box img{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .rtl{
+        flex-wrap: wrap;
+    }
+
+    .imang{
+        width: 20rem;
+    }
+
+    #gta{
+        width: 100%;
+    }
+
+    .kloi{
+        gap: 3rem;
+        flex-wrap: wrap;
+    }
+}
+
+/*ریسپانسیو موبایل*/
+@media (max-width: 700px){
+
+    .icon{
+        flex-direction: column;
+        margin-right: 0;
+        margin-top: 1rem;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .matrial{
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    .menu,
+    .about-menu{
+        position: relative;
+        width: 100%;
+    }
+
+    .iran{
+        flex-direction: column;
+        margin-right: 0;
+        margin-top: 2rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .iran img{
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .text-box,
+    .russia{
+        align-items: center;
+    }
+
+    #hdr{
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .pakstan{
+        margin-right: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .pakstan img{
+        margin: 0 0.5rem;
+    }
+
+    .oman{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .utut{
+        margin-right: 0.6rem;
+    }
+
+    .gol,
+    .pol,
+    .spania{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mah,
+    .fdfd,
+    .ghgh,
+    .jkjk,
+    .bnbn,
+    .mrmr{
+        width: 90%;
+        margin-right: 0;
+    }
+
+    .mah img,
+    .fdfd img,
+    .ghgh img,
+    .jkjk img,
+    .bnbn img,
+    .mrmr img{
+        padding-right: 1rem;
+    }
+
+    #alman{
+        width: 90%;
+    }
+
+    .fran{
+        font-size: 1.4rem;
+        padding: 1rem;
+    }
+
+    #jack{
+        padding: 0 1rem;
+    }
+
+    #uiux{
+        margin: 1rem;
+        width: 90%;
+    }
+
+    .uyty,
+    .dsds,
+    .hdr{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tiri{
+        width: 90%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .tiri img{
+        padding-right: 0;
+    }
+
+    .tiri h3,
+    .tiri p{
+        padding-right: 1rem;
+    }
+
+    .baner{
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .one,
+    .two,
+    .thire{
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+    }
+
+    .box img{
+        width: 100%;
+    }
+
+    .border{
+        position: relative;
+        margin-top: 0;
+    }
+
+    .border a{
+        margin-left: 0.5rem;
+    }
+
+    .rtl{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imang{
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .unvan{
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .kloi{
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    #trak{
+        margin-right: 0;
+    }
+
+    .trvd{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .mahrad,
+    .vpn,
+    .seven{
+        margin-right: 0;
+    }
+
+    .twenty{
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .firsty{
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .open{
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+}
